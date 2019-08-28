@@ -1,7 +1,7 @@
 # Project Name Here
 ***
 ## Link To Project Proposal
-https://github.com/deco3500-2019/Team-Tam/wiki
+https://github.com/deco3500-2019/Team-Tam/wiki/Project-Proposal
 
 ## Link to Final Report
 link to wiki page here for final report
