@@ -5,7 +5,7 @@ try {
     $conn = $_SESSION['DBlink'];
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO user (firstname, lastname, email, comments)
+    $sql = "INSERT INTO test (firstname, lastname, email, comments)
     VALUES ('$_GET[firstname]', '$_GET[lastname]', '$_GET[email]', '$_GET[comments]')";
     // use exec() because no results are returned
     $conn->exec($sql);
