@@ -1,6 +1,36 @@
 <!DOCTYPE html>
-<html>
-<h1>test</h1>
+<?php
+session_start();
+include ("connectDB.php");
+?>
 
-<img src="./Images/body_vector.png" alt="test">
+
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title> database test </title>
+</head>
+	<body>
+		<p> Thank you for choosing to purchase Audiology. Please fill in your details so we can 
+		<form name ="purchase" action="inserted.php" onsubmit="return validation()" method="GET">
+		<div id="first_name">
+			<p> First name: <input type="text" name="firstname"> </p>
+			<div id="first_name_error"></div>
+		</div>
+		<div id="last_name">
+			<p> Last name: <input type="text" name="lastname"></p>
+			<div id="last_name_error"></div>
+		</div>
+		<div id="email">
+			<p> Email: <input type="text" name="email"></p>
+			<div id="email_error"></div>
+		</div>
+		<div id="comments">
+			<p> Comments </p>
+			<p> <input type="text" name="comments"></p>
+		</div>
+			<p> <input type="submit" value="Submit"></p>
+		</form>
+		<img src="./Images/body_vector.png" alt="test">
+	</body>
 </html>
