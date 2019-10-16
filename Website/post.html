@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<?php
+session_start();
+include("connectDB.php");
+?>
+
+<html>
+	<head>
+		<meta charset = 'utf-8'>
+		<title> Test posting </title>
+	</head>
+	
+	<body>
+	<p> How do you feel about this pain? </p>
+	<div id = "form">
+		<form name = "body" action ="bloginserted.php" method = POST>
+			<div id = "blog">
+				<p><label>Blog your pain</label></p>
+				<p> <input type ="text" class="txtfield" name="reflection">
+			</div>
+			<p> <input type="submit" id="submit" value="Share"></p>
+			<p> <input type="submit" id="submit" value="Private Log"></p>
+		</form>
+	</div>
+	</body>
