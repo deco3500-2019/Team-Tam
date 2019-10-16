@@ -1,9 +1,9 @@
 <?php
-include_once('inc/credentials.php');
+include_once('credentials.php');
 $host = 'localhost';
 $UN = UN;
 $PW = PW;
-$DB = 'datastore';
+$DB = 'testdata';
 try {
 $_SESSION['DBlink'] = new PDO('mysql:host=' . $host . ';dbname=' . $DB . ';charset=utf8', $UN, $PW);
 $_SESSION['DBlink']->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -12,4 +12,3 @@ $_SESSION['DBlink']->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 logDBerror($e->getMessage());
 }
 ?>
-
