@@ -19,7 +19,7 @@ catch(PDOException $e)
     	Header('Location: log.php');
     }
     if ($_POST['optiontype'] == "Share") {
-    	Header('Location: share.php');
+    	Header('Location: share.html');
     }
     //Header('Location: log.php');
 	//echo "<a href="log.php">Private Log</a>";

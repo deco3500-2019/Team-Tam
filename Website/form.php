@@ -17,6 +17,7 @@ include("connectDB.php");
 			<div id="nav">
 				<a href="index.html">Home</a>
 				<a href="post.html">Test Posting</a>
+				<a href="public.php">Test public log page</a>
 			</div>
 			<div id="form">
 				<p>The product is still under development.</p>
