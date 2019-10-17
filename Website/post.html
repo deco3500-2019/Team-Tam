@@ -16,10 +16,14 @@ include("connectDB.php");
 		<form name = "body" action ="bloginserted.php" method = POST>
 			<div id = "blog">
 				<p><label>Blog your pain</label></p>
-				<p> <input type ="text" class="txtfield" name="reflection">
+				<p> <input type ="text" class="txtfield" name="reflection"> 
+				<p><input type="radio" name="optiontype" value="Private Log"> Private Log  
+				   <input type="radio" name="optiontype" value="Share"> Share 
+				</p>
 			</div>
-			<p> <input type="submit" id="submit" value="Share"></p>
-			<p> <input type="submit" id="submit" value="Private Log"></p>
+			<p> <input type="submit" id="submit" value="Post"></p>
 		</form>
 	</div>
 	</body>
+</html>
+<script type ="text/javascript" src="diffpages.js"></script>
