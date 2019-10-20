@@ -13,6 +13,53 @@ include("connectDB.php");
 		<link rel="stylesheet" type="text/css" href="css/formcss.css">
 	</head>
 	<body>
+		<p> Please select the region(s) where you are feeling pain </p>
+		<div id="nav">
+			<a href="index.html">Home</a>
+			<a href="post.html">Test Posting</a>
+			<a href="public.php">Test public log page</a>
+		</div>
+		<iframe name="votar" style="display:none;"></iframe>
+		<div id="form1">
+			<form name = "headslect" action="inserted.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" value="head"></input>
+			</form>
+			
+			<form name = "bodyselect" action="insertedbod.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" value="body"></input>
+			</form>
+		</div>
+<!-- 
+		<div id="form">
+			<form name = "bodyselect" action="inserted.php" method = "POST">
+				<p><input type = "button" class="sal" name="head" value="head"></p>
+				<p><input type = "button" class="sal" name="body" value="Body"></p>
+				<p><input type = "button" class="sal" name="rightarm" value="Right Arm"></p>
+				<p><input type = "button" class="sal" name="leftarm" value="Left Arm"></p>
+				<p><input type = "button" class="sal" name="rightleg" value="Right Leg"></p>
+				<p><input type = "button" class="sal" name="leftleg" value="Left Leg"></p>
+				<p> <input type="submit" id="submit" value="Submit"></p>
+			</form>
+		</div>
+<script>
+var values = []; // declare it outside document.ready
+    $( document ).ready(function() {   
+        $('.sal').click(function(i) {
+             values.push($(this).val()); // add value to array
+             console.log(values)
+        }); 
+    }); 
+</script>
+ -->
+	</body>
+</html>
+
+
+<!-- 
 		<div class="wrapper">
 			<div id="nav">
 				<a href="index.html">Home</a>
@@ -46,9 +93,6 @@ include("connectDB.php");
 					</form>
 					</div>
 			</div>	
-	</body>
-</html>
-<script type ="text/javascript" src="validation.js"></script>
-
+ -->
 
 
