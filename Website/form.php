@@ -20,40 +20,40 @@ include("connectDB.php");
 		<p> Please select the region(s) where you are feeling pain </p>
 		<iframe name="votar" style="display:none;"></iframe>
 		<div id="form1">
-			<form name = "headslect" action="inserted.php" onsubmit="return confirm('Select head?');" method = "POST" target="votar">
+			<form name = "headslect" action="inserted.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" value="head"></input>
+			<input type="submit" class = "button" value="head"></input>
 			</form>
 			
-			<form name = "bodyselect" action="inserted1.php" onsubmit="return confirm('Select body?');" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" value="body"></input>
+			<input type="submit" class = "button" value="body"></input>
 			</form>
 			
-			<form name = "bodyselect" action="inserted2.php" onsubmit="return confirm('Select right arm?');"method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted2.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" value="Right Arm"></input>
+			<input type="submit" class = "button" value="Right Arm"></input>
 			</form>
 
-			<form name = "bodyselect" action="inserted3.php" onsubmit="return confirm('Select left arm?');" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted3.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" value="Left Arm"></input>
+			<input type="submit" class = "button" value="Left Arm"></input>
 			</form>
 			
-			<form name = "bodyselect" action="inserted4.php" onsubmit="return confirm('Select right leg?');" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted4.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" value="Right Leg"></input>
+			<input type="submit" class = "button" value="Right Leg"></input>
 			</form>
 			
-			<form name = "bodyselect" action="inserted5.php" onsubmit="return confirm('Select left leg?');" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted5.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" value="Left leg"></input>
+			<input type="submit" class = "button" value="Left leg"></input>
 			</form>
 		</div>
 		
@@ -80,6 +80,14 @@ var values = []; // declare it outside document.ready
     }); 
 </script>
  -->
+ <script>
+ 	$('.button').click(function() {
+ 		var r = confirm('Select body part?');
+ 		if (r == true) {
+ 			$(this).hide();
+ 		}
+ 	});
+ </script>
 	</body>
 </html>
 
