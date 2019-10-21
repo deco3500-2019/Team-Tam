@@ -13,26 +13,51 @@ include("connectDB.php");
 		<link rel="stylesheet" type="text/css" href="css/formcss.css">
 	</head>
 	<body>
-		<p> Please select the region(s) where you are feeling pain </p>
 		<div id="nav">
 			<a href="index.html">Home</a>
-			<a href="post.html">Test Posting</a>
 			<a href="public.php">Test public log page</a>
 		</div>
+		<p> Please select the region(s) where you are feeling pain </p>
 		<iframe name="votar" style="display:none;"></iframe>
 		<div id="form1">
-			<form name = "headslect" action="inserted.php" method = "POST" target="votar">
+			<form name = "headslect" action="inserted.php" onsubmit="return confirm('Select head?');" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" value="head"></input>
 			</form>
 			
-			<form name = "bodyselect" action="insertedbod.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted1.php" onsubmit="return confirm('Select body?');" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" value="body"></input>
 			</form>
+			
+			<form name = "bodyselect" action="inserted2.php" onsubmit="return confirm('Select right arm?');"method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" value="Right Arm"></input>
+			</form>
+
+			<form name = "bodyselect" action="inserted3.php" onsubmit="return confirm('Select left arm?');" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" value="Left Arm"></input>
+			</form>
+			
+			<form name = "bodyselect" action="inserted4.php" onsubmit="return confirm('Select right leg?');" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" value="Right Leg"></input>
+			</form>
+			
+			<form name = "bodyselect" action="inserted5.php" onsubmit="return confirm('Select left leg?');" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" value="Left leg"></input>
+			</form>
 		</div>
+		
+		<p><a href="post.html">Done</a></p>
 <!-- 
 		<div id="form">
 			<form name = "bodyselect" action="inserted.php" method = "POST">
