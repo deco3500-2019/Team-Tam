@@ -125,7 +125,6 @@ nav.navbar.bootsnav {
     font-size: 20px;
     font-weight: 600;
     padding: 33px 0px 57px;
-    text-transform: uppercase;
 }
 /*.navbar-brand*/
 
@@ -135,7 +134,6 @@ nav.navbar.bootsnav {
 nav.navbar.bootsnav ul.nav > li > a {
     font-size: 16px;
     font-weight: 400;
-    text-transform:uppercase;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d89c2b;}
@@ -197,50 +195,107 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d89c2b;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.png)no-repeat;
-    background-size:cover;
-    background-position: center;
-    height:1000px;
-    border-bottom:4px solid #d89c2b;
+    height:150px;
+    border-bottom:4px solid #f7b468;
 }
 .welcome-hero:before{
     position:absolute;
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(170, 205, 238, 0.863);
     width:100%;
     height:100%;
 }
 
 /*.header-text-area*/
-.header-text h2 {
-    color: #fff;
-    font-size: 54px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
 
-
-.header-text h2 span {color: #d89c2b;}
 .header-text p {
     color: #fff;
     font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 30px 0 60px;
+    font-weight: 500;
+    margin-top: 90px;
     letter-spacing: 1px;
 }
-.header-text a {
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
+
+
+/*-------------------------------------
+        5.  Service
+--------------------------------------*/
+.serex {
+    padding: 50px 0 50px;
+    background-color: #e7f0f5bd;
+    padding-top:  0px;
+    height:550px;
+    border-bottom: 2px solid #f7b468;
+}
+
+.service-img{
+    margin-top: 20px;
+    text-align:center;
+    height:0px;
+}
+
+.service-img img{
+    height:500px;
+}
+
+/*-------------------------------------
+        3.  Header
+--------------------------------------*/
+.selection-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    height:70px;
+}
+.selection-hero:before{
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/*.header-text-area*/
+
+.heade-text p {
+    color: rgb(32, 48, 136);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/*-------------------------------------
+        3.  Header
+--------------------------------------*/
+
+.form1 {
+   height:100px; 
+}
+.form1 ul{
+    height:50px; 
+ }
+
+.form1 li{
+    margin-top: 10px;
+    padding:5px;
+    float: left;
+
+
+    }
+  
+.button{
+    width: 100px;
+    height: 30px;
     border-radius: 3px;
     text-transform: capitalize;
     color: #fff;
-    background: #d89c2b;
-    border:1px solid #d89c2b;
+    background: #3267a3;
+    border:1px solid #000f83;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -248,438 +303,26 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d89c2b;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ 
+.button:hover{ 
     box-shadow: 0 5px 20px rgba(0,0,0,.4);
-    background:#7490cc;
-    border: 1px solid #213a70;
+    background:#ffa836;
+    border: 1px solid #c97800;
 }
-/*.header-text-area*/
-
-
 
 /*-------------------------------------
 		8. Footer
 --------------------------------------*/
 
-.footerx {
-    background-color: #e7f0f5bd;
-    padding-top:  3px;
-    border-bottom: 2px solid #d89c2b;
-}
-
-.footmenu{ 
-    padding-top:30px; 
-    padding-bottom:30px; 
-    height:240px;
-    background:#1c6e11d2; 
-}
-
-
-.footmenu img{ 
-    width:200px; 
-    height:180px; 
-}
-.item-a{ 
-    width:260px; 
-    height:180px; 
-    float:left; 
-    text-align:left; 
-    margin-left:340px;
-    padding-left: 30px;
-    color:#FFF; 
-    font-size:12px;
-    line-height: 35px;
-}
-
-.item-f{ 
-    width:230px; 
-    height:180px; 
-    border-left:1px solid #ffffff; 
-    float:left; 
-    text-align:left; 
-    padding-top: 20px;
-    padding-left: 40px;
-    color:#FFF; 
-    font-size:12px;
-    line-height: 35px;
-}
-
-.item-f a{ color:#FFF;}
-.item-a a{ 
-    color:#FFF;
-}
-
-
-
 
 .footer-copyright {
-    background-color: #ffffff;
+    background-color: #ffebc6;
     height:41px;
 }
 
 .footer-copyright p{
-    color: #d89c2b;
+    color: #ffa600;
     text-transform: capitalize;
     padding: 8px 0;
 }
 
-
-
-/*-------------------------------------
-		9. Dashboard
---------------------------------------*/
-
-.dashboard{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:cover;
-    background-position: center;
-
-    background-attachment: fixed;
-
-    height:880px;
-
-}
-.dashboard:before{
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(31,44,108,.65);
-    width:100%;
-    height:100%;
-}
-
-/*.header-text-area*/
-
-.header-text h2 {
-    color: #fff;
-    font-size: 54px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-.header-text h2 span {color: #d89c2b;}
-.header-text p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 30px 0 60px;
-    letter-spacing: 1px;
-}
-.header-text button {
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 3px;
-    text-transform: capitalize;
-    color: #fff;
-    background: #d89c2b;
-    border:1px solid #d89c2b;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
-}
-.header-text button:hover{ 
-    box-shadow: 0 5px 20px rgba(0,0,0,.4);
-    background:#dbba00;
-    border: 1px solid #0c6800;}
-
-/*popup login*/
-
-.clearfix{
-    zoom: 1;
-}
-
-.popbox{
-    width: 600px;
-    padding-bottom: 30px;
-    border-radius: 6px;
-    background: #FFFFff;
-    position: absolute;
-    left: 45%;
-    margin-left: -250px;
-    top:26%;
-    z-index: 19;
-}
-.poptop{
-    width: 100%;
-    height: 60px;
-    line-height: 120px;
-    text-align: center;
-    border-bottom: 1px solid #F2F2F2;
-    position: relative;
-}
-.poptop h3{
-    margin-top: 12px;
-    font-size:32px;
-    font-weight: 600;
-    color:#059400;
-}
-
-.popcon{
-    padding: 20px 50px;
-}
-
-.popcon .group{
-    position: relative;
-}
-
-.popcon .group  input[type="text"]{
-    color: #999999;
-}
-.popcon .group i{
-    position: absolute;
-    left: 12px;
-    top:28px;
-    font-size: 20px;
-    color: #bbbbbb;
-}
-.popcon input[type="text"]{
-    width:100%;
-    height: 36px;
-    line-height: 36px;
-    border-radius:26px;
-    margin-bottom: 10px;
-    padding:0 10px 0 40px;
-    border:none;
-    background: #f0f0f0;
-}
-.popcon input:focus{
-    outline: none;
-    background: #DDDDDD;
-}
-
-.popcon .group input:focus+i{
-    color: #059400;
-}
-.popcon .remember{
-    font-size: 12px;
-    margin-top: 15px;
-    color: #059400;
-}
-.popcon .remember .remember-con{
-    width:50%;
-    display: block;
-    float: left;
-}
-
-.remember-con a{
-    width: 150px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 3px;
-    text-transform: capitalize;
-    color: #fff;
-    background: #575a57;
-    border:1px solid #3f3f3f;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
-}
-
-.remember-con a:hover{ 
-    box-shadow: 0 5px 20px rgba(0,0,0,.4);
-    background:#0c6800;
-    border: 1px solid #0c6800;}
-    
-.popcon input[type="checkbox"]{
-    vertical-align: -1px;
-    margin-right: -2px;
-}
-
-
-.popcon .remember .code{
-    display: block;
-    float: right;
-    font-size: 14px;
-    color: #ffffff;
-}
-.popcon .remember .code:hover{
-    text-decoration: underline;
-    color: #ffffff;
-}
-.popcon .remember .fa-question-circle{
-    color: #ffffff;
-    margin-right:3px;
-}
-.divbtn{
-    width: 260px;
-    margin:30px auto 0;
- }
-.divbtn .btn{
-    display: block;
-    float: left;
-    width:120px;
-    height: 50px;
-    line-height: 36px;
-    text-align: center;
-    border-radius:6px;
-    background: #eeeeee;
-    color: #464646;
-}
-.divbtn .btn:hover{
-    background: #DDDDDD;
-}
-.divbtn .ok{
-    background: #059400;
-    margin-left: 20px;
-    color: #FFFFff;
-}
-.divbtn .ok:hover{
-    background: #059400;
-}
-
-/*.header-text-area*/
-
-/*-------------------------------------
-		10. Register
---------------------------------------*/
-
-.register {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-    height:890px;
-}
-
-.register:before {
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(31,44,108,.65);
-    width:100%;
-    height:100%;
-}
-
-#register-box {
-    border: 1px solid #FFFFff;
-    background-color: #FFFFff;
-    font-size: 1em;
-    padding-right:10em;
-    width: 30em;
-    height:40em;
-    border-radius: 1.2em;
-}
-
-.group-heading {
-    text-align: left;
-    padding-left: 1.4em;
-    
-}
-
-/*-------------------------------------
-		12. Expression of Interest
---------------------------------------*/
-.interest{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-    height:890px;
-}
-
-.interest:before {
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(31,44,108,.65);
-    width:100%;
-    height:100%;
-}
-.popcon .group  textarea{
-    color: #999999;
-}
-
-.popcon textarea{
-    width:100%;
-    height: 108px;
-    line-height: 36px;
-    border-radius:26px;
-    margin-bottom: 10px;
-    padding:0 10px 0 40px;
-    border:none;
-    background: #f0f0f0;
-}
-.popcon textarea:focus{
-    outline: none;
-    background: #DDDDDD;
-}
-
-.popcon .group textarea:focus+i{
-    color: #059400;
-}
-
-/*-------------------------------------
-		13. Total Visits Graph
---------------------------------------*/
-.analytic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-    height:1000px;
-}
-
-.analytic:before {
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(31,44,108,.65);
-    width:100%;
-    height:100%;
-}
-.popcon .group  textarea{
-    color: #999999;
-}
-.chartContainerTest{
-    height: 300px;
-    width: 76%;
-    
-}
-
-.popcon textarea{
-    width:100%;
-    height: 108px;
-    line-height: 36px;
-    border-radius:26px;
-    margin-bottom: 10px;
-    padding:0 10px 0 40px;
-    border:none;
-    background: #f0f0f0;
-}
-.popcon textarea:focus{
-    outline: none;
-    background: #DDDDDD;
-}
-
-.popcon .group textarea:focus+i{
-    color: #059400;
-}
 

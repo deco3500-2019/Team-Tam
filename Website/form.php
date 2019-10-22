@@ -4,82 +4,253 @@ session_start();
 include("connectDB.php");
 ?>
 
-<html>
-	<head>
-		<meta charset = 'utf-8'>
-		<title> Form test </title>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Sufferer</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+       
 		<link href="https://fonts.googleapis.com/css?family=Nunito:900|Raleway" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/formcss.css">
-	</head>
+    </head>
+    
+	
 	<body>
-		<div id="nav">
-			<a href="index.html">Home</a>
-			<a href="public.php">Test public log page</a>
-		</div>
-		<p> Please select the region(s) where you are feeling pain </p>
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">PainBlog</a>
+			            </div>
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                                <li class="smooth-menu"><a href=#>Private</a></li>
+                                <li class="smooth-menu"><a href="public.php"#>Public</a></li>
+                                <li class="smooth-menu"><a href=#>User</a></li>
+                               
+			                </ul>
+			            </div>
+			        </div>
+			    </nav>
+			    <!-- End Navigation -->
+			</div>
+                <div class="clearfix"></div>
+    
+            </header><!-- /.top-area-->
+            <!-- top-area End -->
+        
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="header-text">
+                                <p>Check your pain area refering to the image below</p>
+                            </div><!--/.header-text-->
+                        </div><!--/.col-->
+                    </div><!-- /.row-->
+                </div><!-- /.container-->
+            </section><!--/.welcome-hero-->
+            <!--welcome-hero end -->
+
+
+		<!--image-hero start -->
+		<section id="serex" class="serex">
+                <div class="container">
+                        <div class="service-img">
+                            <img src="assets/images/about/body.png"/></a>
+                        </div>
+                </div><!-- /.container-->
+        </section><!--/.welcome-hero-->
+            <!--image-hero end -->
+            
+
+            <section id="selection-hero" class="selection-hero">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="heade-text">
+                                    <p>Please select the regions where you are feeling pain:</p>
+                                </div><!--/.header-text-->
+                            </div><!--/.col-->
+                        </div><!-- /.row-->
+                    </div><!-- /.container-->
+                </section><!--/.welcome-hero-->
+                <!--welcome-hero end -->
+    
+        <section id="select" class="select">
+            <div class="container">
+                <div class="row">
 		<iframe name="votar" style="display:none;"></iframe>
-		<div id="form1">
+		<div id="form1" class="form1">
+            <ul>        
+            <li>       
 			<form name = "headslect" action="inserted.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" class = "button" value="head"></input>
-			</form>
-			
+			<input type="submit" class = "button" value="Head"></input>
+            </form>
+            </li>
+
+            <li>       
 			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" class = "button" value="body"></input>
+			<input type="submit" class = "button" value="Neck"></input>
 			</form>
-			
+            </li>
+
+            <li>
+			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" class = "button" value="Back"></input>
+            </form>
+            </li>
+
+            <li>
+			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" class = "button" value="Waist"></input>
+            </form>
+            </li>
+
+            <li>
+			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" class = "button" value="Shoulder"></input>
+            </form>
+            </li>
+
+            <li>
 			<form name = "bodyselect" action="inserted2.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" class = "button" value="Right Arm"></input>
+			<input type="submit" class = "button" value="Arm"></input>
 			</form>
+            </li>
+            </ul>        
+            <ul>        
 
-			<form name = "bodyselect" action="inserted3.php" method = "POST" target="votar">
+            <li>
+			<form name = "bodyselect" action="inserted2.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" class = "button" value="Left Arm"></input>
+			<input type="submit" class = "button" value="Wrist"></input>
 			</form>
-			
+            </li>  
+
+            <li>
 			<form name = "bodyselect" action="inserted4.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" class = "button" value="Right Leg"></input>
+			<input type="submit" class = "button" value="Caudal"></input>
 			</form>
-			
+			</li>
+
+            <li>
+			<form name = "bodyselect" action="inserted3.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" class = "button" value="Knee"></input>
+			</form>
+            </li>
+            
+            <li>
+			<form name = "bodyselect" action="inserted4.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" class = "button" value="Leg"></input>
+			</form>
+            </li>
+            
+            <li>
 			<form name = "bodyselect" action="inserted5.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
-			<input type="submit" class = "button" value="Left leg"></input>
-			</form>
-		</div>
-		
-		<p><a href="post.html">Done</a></p>
-<!-- 
-		<div id="form">
-			<form name = "bodyselect" action="inserted.php" method = "POST">
-				<p><input type = "button" class="sal" name="head" value="head"></p>
-				<p><input type = "button" class="sal" name="body" value="Body"></p>
-				<p><input type = "button" class="sal" name="rightarm" value="Right Arm"></p>
-				<p><input type = "button" class="sal" name="leftarm" value="Left Arm"></p>
-				<p><input type = "button" class="sal" name="rightleg" value="Right Leg"></p>
-				<p><input type = "button" class="sal" name="leftleg" value="Left Leg"></p>
-				<p> <input type="submit" id="submit" value="Submit"></p>
-			</form>
-		</div>
-<script>
-var values = []; // declare it outside document.ready
-    $( document ).ready(function() {   
-        $('.sal').click(function(i) {
-             values.push($(this).val()); // add value to array
-             console.log(values)
-        }); 
-    }); 
-</script>
- -->
+			<input type="submit" class = "button" value="Ankle"></input>
+            </form>
+            </li>
+            
+            <li>
+			<form name = "bodyselect" action="inserted5.php" method = "POST" target="votar">
+			<input name="secret" type="hidden" value="my hidden value"></input>
+			<input name="product-id" type="hidden" value="1"></input>
+			<input type="submit" class = "button" value="Others"></input>
+            </form>
+            </li>
+        </ul>
+        </div>
+         </div>
+    </div>
+    </section>
+      		<!--Change hide to change colour-->
+  
+              <section id="selection-hero" class="selection-hero">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="heade-text">
+                                        <p><a href="post.html">Done</a></p>
+                                    </div><!--/.header-text-->
+                            </div><!--/.col-->
+                        </div><!-- /.row-->
+                    </div><!-- /.container-->
+                </section><!--/.welcome-hero-->
+                <!--welcome-hero end -->
+
+        
+
+
+
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+                <div class="container">
+                    <div class="hm-footer-copyright text-center">
+                        <p>Copyright &copy; 2019. TeamTam All rights reserved.</p>
+                    </div><!--/.text-center-->
+                </div><!--/.container-->
+    
+    
+            </footer><!--/.footer-copyright-->
+
+			
  <script>
  	$('.button').click(function() {
  		var r = confirm('Select body part?');

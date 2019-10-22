@@ -1,0 +1,303 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #6a708e;
+	font-size:16px;
+	padding:0;
+}
+
+h2 { 
+	margin: 0;
+	color:#d89c2b;
+    font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+h1,h3,h4,h5,h6 { 
+	margin: 0;
+	color:#43485c;
+    font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+}
+p {
+	margin: 0;
+	line-height:1.8;
+	color:#595b5f;
+	font-size:14px;
+	font-family: 'Poppins', sans-serif;
+}
+
+ul{
+	padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+ul li {
+	list-style: none;
+	
+}
+select,input,textarea,button{box-shadow:none;outline:0!important;}
+button {background: transparent;border: 0;}
+
+html,body{
+    height: 100%;
+	position: relative;
+}
+
+
+.fix{position: relative;clear: both;}
+/*=============Style css=========*/
+.tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*-------------------------------------
+        2. Nav
+--------------------------------------*/
+.top-area {
+    position: fixed; 
+    width: 100%;
+    z-index: 999;
+}
+@media (min-width: 1024px){}
+nav.navbar.bootsnav.no-background {
+    background-color: #fff;
+    border: none;
+}
+
+nav.navbar.bootsnav {
+    background-color: #fff;
+    border-bottom: transparent;
+    height:80px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+
+/*.navbar-brand*/
+.navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
+    display: inline-block;
+    color: #d89c2b;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 33px 0px 57px;
+}
+/*.navbar-brand*/
+
+
+
+/*.nav li*/
+nav.navbar.bootsnav ul.nav > li > a {
+    font-size: 16px;
+    font-weight: 400;
+}
+nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d89c2b;}
+
+nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
+    content: "";
+}
+nav.navbar.bootsnav ul.nav > li.dropdown span {
+    font-size: 8px;
+    margin-left: 15px;
+}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#9fa2b1;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d89c2b;}
+/*.nav li*/
+
+
+
+/*.menu-ui-design*/
+.menu-ui-design{overflow-y:scroll;height: 350px;}
+.menu-ui-design::-webkit-scrollbar {
+    width:5px;
+}
+.menu-ui-design::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px #000;
+}
+.menu-ui-design::-webkit-scrollbar-thumb {
+  background-color: #d89c2b;
+}
+/*.menu-ui-design*/
+
+
+
+/*.navbar-toggle */
+nav.navbar.bootsnav .navbar-toggle {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #d89c2b;
+    padding: 10px;
+    top: 0;
+}
+nav.navbar.bootsnav .navbar-toggle i{color: #d89c2b;}
+/*.navbar-toggle */
+
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 10px;
+    background-color: #ffffff81;
+    padding: 30px;
+    border-bottom: 1px solid #cfe6f3;
+}
+
+/*-------------------------------------
+		8. Footer
+--------------------------------------*/
+
+
+.footer-copyright {
+    background-color: #ffffff;
+    height:41px;
+}
+
+.footer-copyright p{
+    color: #d89c2b;
+    text-transform: capitalize;
+    padding: 8px 0;
+}
+
+
+
+/*-------------------------------------
+		9. Dashboard
+--------------------------------------*/
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:880px;
+
+}
+.dashboard:before{
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    background:rgba(31,44,108,.65);
+    width:100%;
+    height:100%;
+}
+
+/*.header-text-area*/
+
+.header-text h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 5;
+}
+
+.header-text p {
+    color: #d89c2b;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+    line-height: 0;
+
+}
+
+.header-text h4 {
+    color: #d89c2b;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 30px 0 60px;
+    line-height: 0;
+
+}
+
+.txtfield {
+    border: 1px solid rgb(255, 177, 87);
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    width: 20em;
+    height:5em;
+    border-radius: 0.2em;
+}
+
+
+.header-text h5{
+    color: #d89c2b;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0 60px;
+    line-height: 0;
+
+}
+.submit {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #d89c2b;
+    border:1px solid #ffa600;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    -webkit-transition: 0.3s linear; 
+    -moz-transition: 0.3s linear; 
+    -ms-transition: 0.3s linear; 
+    -o-transition: 0.3s linear; 
+    transition: 0.3s linear;
+}
+.submit:hover{ 
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+    background:#7490cc;
+    border: 1px solid #213a70;
+}
+
+
+/*-------------------------------------
+		10. Register
+--------------------------------------*/
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:890px;
+}
+
+.post:before {
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    background:rgba(31,44,108,.65);
+    width:100%;
+    height:100%;
+}
+
+
+
+.group-heading {
+    text-align: left;
+    padding-left: 1.4em;
+    
+}
+
