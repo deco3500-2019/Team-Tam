@@ -325,4 +325,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d89c2b;}
     padding: 8px 0;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
 
