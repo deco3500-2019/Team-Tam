@@ -20,7 +20,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "SELECT * FROM blog WHERE type = 'Private Log' ";
+	$sql = "SELECT * FROM blog WHERE type = 'Private Log' AND user_ID = '1' ";
 	$result = $conn->query($sql);
 	
 	if ($result->num_rows > 0) {
