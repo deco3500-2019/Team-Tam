@@ -20,10 +20,10 @@ catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
-    if ($_POST['optiontype'] == "Private Log") {
+    if ($_POST['optiontype'] == "Private") {
     	Header('Location: log.php');
     }
-    if ($_POST['optiontype'] == "Share") {
+    if ($_POST['optiontype'] == "Public") {
     	$conn->exec($sql2);
     	Header('Location: share.html');
     }
