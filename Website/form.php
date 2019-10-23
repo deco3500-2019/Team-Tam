@@ -118,7 +118,7 @@ include("connectDB.php");
 		<div id="form1" class="form1">
             <ul>        
             <li>       
-			<form name = "headslect" action="inserted.php" method = "POST" target="votar">
+			<form name = "headslect" action="inserted1.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Head"></input>
@@ -126,7 +126,7 @@ include("connectDB.php");
             </li>
 
             <li>       
-			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted2.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Neck"></input>
@@ -134,7 +134,7 @@ include("connectDB.php");
             </li>
 
             <li>
-			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted3.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Back"></input>
@@ -142,7 +142,7 @@ include("connectDB.php");
             </li>
 
             <li>
-			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted4.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Waist"></input>
@@ -150,7 +150,7 @@ include("connectDB.php");
             </li>
 
             <li>
-			<form name = "bodyselect" action="inserted1.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted5.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Shoulder"></input>
@@ -158,7 +158,7 @@ include("connectDB.php");
             </li>
 
             <li>
-			<form name = "bodyselect" action="inserted2.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted6.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Arm"></input>
@@ -168,7 +168,7 @@ include("connectDB.php");
             <ul>        
 
             <li>
-			<form name = "bodyselect" action="inserted2.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted7.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Wrist"></input>
@@ -176,7 +176,7 @@ include("connectDB.php");
             </li>  
 
             <li>
-			<form name = "bodyselect" action="inserted4.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted8.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Caudal"></input>
@@ -184,7 +184,7 @@ include("connectDB.php");
 			</li>
 
             <li>
-			<form name = "bodyselect" action="inserted3.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted9.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Knee"></input>
@@ -192,7 +192,7 @@ include("connectDB.php");
             </li>
             
             <li>
-			<form name = "bodyselect" action="inserted4.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted10.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Leg"></input>
@@ -200,7 +200,7 @@ include("connectDB.php");
             </li>
             
             <li>
-			<form name = "bodyselect" action="inserted5.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted11.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Ankle"></input>
@@ -208,7 +208,7 @@ include("connectDB.php");
             </li>
             
             <li>
-			<form name = "bodyselect" action="inserted5.php" method = "POST" target="votar">
+			<form name = "bodyselect" action="inserted12.php" method = "POST" target="votar">
 			<input name="secret" type="hidden" value="my hidden value"></input>
 			<input name="product-id" type="hidden" value="1"></input>
 			<input type="submit" class = "button" value="Others"></input>

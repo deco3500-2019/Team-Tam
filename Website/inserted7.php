@@ -5,7 +5,7 @@ try {
     $conn = $_SESSION['DBlink'];
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "UPDATE bodyparts SET waist = '1' WHERE user_ID = '1'";
+    $sql = "UPDATE bodyparts SET wrist = '1' WHERE user_ID = '1'";
     // use exec() because no results are returned
     $conn->exec($sql);
     }

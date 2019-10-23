@@ -7,10 +7,14 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "INSERT into blog (user_ID, miniblog, type)
     VALUES ('1','$_POST[reflection]', '$_POST[optiontype]')";
+    
+    $sql2 = "INSERT into blogreact (miniblog, heart, smile)
+    VALUES ('$_POST[reflection]', '0', '0')";
 //     $sql = "UPDATE bodyparts SET miniblog = '$_POST[reflection]', type = '$_POST[optiontype]' 
 //     WHERE user_ID = '1' ";
     // use exec() because no results are returned
     $conn->exec($sql);
+    $conn->exec($sql2);
     }
 catch(PDOException $e)
     {
