@@ -7,6 +7,9 @@
 <table>
 	<tr>
 		<th>Reflection</th>
+		<th>Type</th>
+		<th>Heart count</th>
+		<th>Smile count</th>
 	</tr>
 	<?php
 	include_once('credentials.php');
@@ -20,12 +23,12 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 	
-	$sql = "SELECT * FROM blog WHERE type = 'Private Log' AND user_ID = '1' ";
+	$sql = "SELECT * FROM blog WHERE user_ID = '1' ";
 	$result = $conn->query($sql);
 	
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
-			echo "<tr><td>". $row["miniblog"] . "</td></tr>";
+			echo "<tr><td>". $row["miniblog"] . "</td><td>". $row["type"] . "</td><td>". $row["heart"] . "</td><td>". $row["smile"] . "</td></tr>";
 		}
 		echo "</table>";
 	}

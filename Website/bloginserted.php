@@ -5,11 +5,9 @@ try {
     $conn = $_SESSION['DBlink'];
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT into blog (user_ID, miniblog, type)
-    VALUES ('1','$_POST[reflection]', '$_POST[optiontype]')";
+    $sql = "INSERT into blog (user_ID, miniblog, type, heart, smile)
+    VALUES ('1','$_POST[reflection]', '$_POST[optiontype]', '0', '0')";
     
-    $sql2 = "INSERT into blogreact (miniblog, heart, smile)
-    VALUES ('$_POST[reflection]', '0', '0')";
 //     $sql = "UPDATE bodyparts SET miniblog = '$_POST[reflection]', type = '$_POST[optiontype]' 
 //     WHERE user_ID = '1' ";
     // use exec() because no results are returned
