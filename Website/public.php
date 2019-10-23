@@ -81,8 +81,8 @@
             <section id="log-table" class="logtable">
 				<table>
 					<tr>
+						<th>Number</th>
 						<th>Reflection</th>
-						<th colspan="2">Reactions</th>
 					</tr>
 					<?php
 					include_once('credentials.php');
@@ -96,12 +96,15 @@
 						die("Connection failed: " . $conn->connect_error);
 					}
 
-					$sql = "SELECT * FROM blog WHERE type = 'Share' ";
+					$sql = "SELECT * FROM public";
 					$result = $conn->query($sql);
 
 					if ($result->num_rows > 0) {
 						while($row = $result->fetch_assoc()) {
-							echo "<tr><td>". $row["miniblog"] . "</td><td><input type='button' value='Heart'></td><td><input type='button' value='Smile'></td></tr>";
+							echo "<tr>
+							<td>". $row["ID"] . "</td>
+							<td>". $row["miniblog"] . "</td>
+							</tr>";
 						}
 						echo "</table>";
 					}
@@ -111,6 +114,14 @@
 					$conn->close();
 					?>
 				</table>
+            <section id = "reactions" class="reaction">
+				<form name = "reactselect" action="insertedreact.php" method = "POST">
+				<p>Please select the ID of the reflection that you would like to send a react to</p>
+				<p><input type="text" name="idchosen"></p>
+				<p><input type="radio" name="optiontype" value="heart"> Send a heart  
+				<input type="radio" name="optiontype" value="smile"> Send a smile </p>
+				<p><input type="submit" id="submit" class="submit" value="Send"></p>
+				</form>
             </section>
 
 

@@ -8,21 +8,23 @@ try {
     $sql = "INSERT into blog (user_ID, miniblog, type, heart, smile)
     VALUES ('1','$_POST[reflection]', '$_POST[optiontype]', '0', '0')";
     
+    $sql2 = "INSERT into public (user_ID, miniblog)
+    VALUES ('1','$_POST[reflection]')";
+    
 //     $sql = "UPDATE bodyparts SET miniblog = '$_POST[reflection]', type = '$_POST[optiontype]' 
 //     WHERE user_ID = '1' ";
     // use exec() because no results are returned
     $conn->exec($sql);
-    $conn->exec($sql2);
     }
 catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
-    echo "insert" ;
     if ($_POST['optiontype'] == "Private Log") {
     	Header('Location: log.php');
     }
     if ($_POST['optiontype'] == "Share") {
+    	$conn->exec($sql2);
     	Header('Location: share.html');
     }
     //Header('Location: log.php');
