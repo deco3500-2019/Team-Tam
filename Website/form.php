@@ -57,9 +57,8 @@ include("connectDB.php");
 			            <!-- Collect the nav links, forms, and other content for toggling -->
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li class="smooth-menu"><a href=#>Private</a></li>
-                                <li class="smooth-menu"><a href="public.php"#>Public</a></li>
-                                <li class="smooth-menu"><a href=#>User</a></li>
+                                <li class="smooth-menu"><a href="public.php">Journals</a></li>
+                                <li class="smooth-menu"><a href="log.php">User</a></li>
                                
 			                </ul>
 			            </div>
